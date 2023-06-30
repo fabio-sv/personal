@@ -25,12 +25,12 @@
 		outline: none;
 	}
 
-	.input::placeholder {
+	input::placeholder {
 		color: var(--font-color-sub);
 		opacity: 0.8;
 	}
 
-	.input:focus {
+	input:focus {
 		border: 2px solid var(--input-focus);
 	}
 </style>

@@ -1,11 +1,14 @@
 <script lang="ts">
 	import Images from '../lib/components/Images.svelte';
+	import IObs from '$lib/components/IObs.svelte';
 
+	// @ts-ignore
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 
 	import IconWhatsapp from 'svelte-icons-pack/si/SiWhatsapp';
 	import IconGithub from 'svelte-icons-pack/si/SiGithub';
-	import IObs from '$lib/components/IObs.svelte';
+	import IconPhone from 'svelte-icons-pack/fi/FiPhone';
+	import IconEmail from 'svelte-icons-pack/fi/FiMail';
 </script>
 
 <main class="text-dark font-open text-2xs text-center z-10 relative snap-y snap-proximity">
@@ -53,10 +56,16 @@
 	</section>
 
 	<footer class="flex justify-center items-center gap-x-4 w-full py-4 bg-light snap-end">
-		<a href="tel:0714558340">
+		<a href="tel:+27714558340" aria-label="Contact me on my phone number">
+			<Icon src={IconPhone} size="1rem" />
+		</a>
+		<a href="mailto:fabsousa23.fs@gmail.com" aria-label="Contact me on my e-mail">
+			<Icon src={IconEmail} size="1rem" />
+		</a>
+		<a href="https://api.whatsapp.com/send?phone=27714558340" aria-label='Contact me on Whatsapp'>
 			<Icon src={IconWhatsapp} size="1rem" />
 		</a>
-		<a href="https://github.com/FabioSVBBD">
+		<a href="https://github.com/FabioSVBBD" aria-label="Look at my Github">
 			<Icon src={IconGithub} size="1rem" />
 		</a>
 	</footer>
