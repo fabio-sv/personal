@@ -21,6 +21,7 @@
 	import IconAstro from 'svelte-icons-pack/si/SiAstro';
 	import IconFigma from 'svelte-icons-pack/si/SiFigma';
 	import IconStrapi from 'svelte-icons-pack/si/SiStrapi';
+	import IObs from './IObs.svelte';
 
 	type IconType = {
 		icon: unknown;
@@ -51,11 +52,13 @@
 	];
 </script>
 
-<section class='grid grid-cols-4 gap-y-4 gap-x-2'>
+<section class="grid grid-cols-4 gap-y-4 gap-x-2 sm:max-w-lg">
 	{#each icons as icon, i (i)}
-		<div class='flex flex-col justify-center items-center'>
-			<Icon src={icon.icon} size="0.75rem" className="inline" />
-			<p class="text-3xs text-dark font-semibold w-fit text-center">{icon.name}</p>
-		</div>
+		<IObs delay={(i % 4) * 200}>
+			<div class="image-box flex flex-col justify-center items-center">
+				<Icon src={icon.icon} size="0.75rem" className="inline" />
+				<p class="text-3xs text-dark font-semibold w-fit text-center">{icon.name}</p>
+			</div>
+		</IObs>
 	{/each}
 </section>
