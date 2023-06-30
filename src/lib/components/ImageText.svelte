@@ -1,8 +1,8 @@
-<script lang='ts'>
+<script lang="ts">
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 
 	export let icon: unknown;
-	export let name: string = '';
+	export let name = '';
 </script>
 
 <div class="image-box flex flex-col justify-center items-center">

@@ -12,6 +12,9 @@ export default {
 				open: ['"Open Sans"', 'sans-serif'],
 				agdasima: ['"Agdasima"', 'sans-serif']
 			},
+			gridTemplateColumns: {
+				timeline: '1fr 2rem 1fr'
+			},
 			colors: {
 				light: '#FAFAFA',
 				dark: '#252525',

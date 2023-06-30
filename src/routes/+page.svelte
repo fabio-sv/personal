@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
+	import Typewriter from 'svelte-typewriter';
 	import H1 from '$lib/components/H1.svelte';
 	import H2 from '$lib/components/H2.svelte';
 	import H3 from '$lib/components/H3.svelte';
@@ -14,7 +14,8 @@
 
 	onMount(() => {
 		const onscroll = () =>
-			(atBottom = window.innerHeight + Math.round(window.scrollY) >= document.body.offsetHeight);
+			(atBottom =
+				window.innerHeight + Math.round(window.scrollY) >= 0.9 * document.body.offsetHeight);
 
 		onscroll();
 		window.addEventListener('scroll', onscroll);
@@ -23,21 +24,38 @@
 
 <PageLayout class="min-h-screen relative">
 	<IObs once>
-		<H1>Fabio Sousa Vieira.</H1>
-		<H2>Professional Software engineer</H2>
+		<H1>Fabio Sousa Vieira</H1>
+		<Typewriter
+			cursor
+			mode="loop"
+			interval={20}
+			unwriteInterval={20}
+			wordInterval={1000}
+			--cursor-color="#252525"
+		>
+			<H2>Software engineer</H2>
+			<H2>Web developer</H2>
+			<H2>Full stack developer</H2>
+			<H2>Cloud engineer</H2>
+			<H2>Problem solver</H2>
+			<H2>Bug fixer</H2>
+			<H2>Tech enthusiast</H2>
+		</Typewriter>
 
-		<Button href="/contact">Contact</Button>
+		<Button href="/cv">Resume</Button>
 	</IObs>
 	<BouncingArrow {atBottom} />
 </PageLayout>
 
-<section class="flex flex-col pb-8 px-8 border-t bg-light snap-start items-center className='drop-shadow'">
+<section
+	class="flex flex-col pb-8 px-8 border-t bg-light snap-start items-center className='drop-shadow'"
+>
 	<IObs once>
 		<H3>About me</H3>
 	</IObs>
 
 	<IObs once>
-		<p class='text-xs'>
+		<p class="text-xs">
 			I am a 23 year old software engineer and problem solving fundi from Johannesburg, South
 			Africa. <br />
 			I'm really good at what I do.
