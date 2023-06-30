@@ -15,7 +15,7 @@ fill="none"
 viewBox="0 0 24 24"
 stroke-width="1.5"
 stroke="currentColor"
-class="w-6 h-6 absolute bottom-4"
+class="w-6 h-6 absolute bottom-4 drop-shadow"
 class:animate-bounce={!atBottom}
 >
 <path

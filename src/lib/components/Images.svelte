@@ -6,7 +6,7 @@
 
 <section class="grid grid-cols-4 gap-y-4 gap-x-2 sm:max-w-lg">
 	{#each icons as icon, i (i)}
-		<IObs delay={i * 50 + (i % 4) * 200} once>
+		<IObs delay={i * 25 + (i % 4) * 100} once>
 			<ImageText {...icon} />
 		</IObs>
 	{/each}

@@ -31,13 +31,13 @@
 	<BouncingArrow {atBottom} />
 </PageLayout>
 
-<section class="flex flex-col pb-8 px-8 border-t bg-light snap-start items-center">
+<section class="flex flex-col pb-8 px-8 border-t bg-light snap-start items-center className='drop-shadow'">
 	<IObs once>
 		<H3>About me</H3>
 	</IObs>
 
 	<IObs once>
-		<p>
+		<p class='text-xs'>
 			I am a 23 year old software engineer and problem solving fundi from Johannesburg, South
 			Africa. <br />
 			I'm really good at what I do.

@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 * {
+	scrollbar-color: transparent transparent;
+	scrollbar-width: thin;
+
 	@apply transition-all;
 }
 
 .hide-animation {
 	opacity: 0;
 	filter: blur(2px);
-	transform: translateX(-100%);
+	transform: translateX(-25%);
 	transition: all 0.6s;
 }
 
@@ -19,8 +22,24 @@
 	transform: translateX(0);
 }
 
-@media(prefers-reduced-motion) {
-	.hide-animation, .show-animation {
+@media (prefers-reduced-motion) {
+	.hide-animation,
+	.show-animation {
 		transition: none;
 	}
+}
+
+::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: 0;
+	border-radius: 0;
 }
