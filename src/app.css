@@ -6,11 +6,6 @@
 	@apply transition-all;
 }
 
-h1,
-h2 {
-	font-family: 'Agdasima', sans-serif;
-}
-
 .hide-animation {
 	opacity: 0;
 	filter: blur(2px);
@@ -25,7 +20,7 @@ h2 {
 }
 
 @media(prefers-reduced-motion) {
-	.hidden {
+	.hide-animation, .show-animation {
 		transition: none;
 	}
 }

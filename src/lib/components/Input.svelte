@@ -2,35 +2,9 @@
 	export let placeholder = 'placeholder';
 </script>
 
-<input type="text" inputmode="text" {placeholder} />
-
-<style>
-	input {
-		--input-focus: #2d8cf0;
-		--font-color: #323232;
-		--font-color-sub: #666;
-		--bg-color: #fff;
-		--main-color: #323232;
-		
-		width: 200px;
-		height: 40px;
-		border-radius: 5px;
-		border: 2px solid var(--main-color);
-		background-color: var(--bg-color);
-		box-shadow: 4px 4px var(--main-color);
-		font-size: 15px;
-		font-weight: 600;
-		color: var(--font-color);
-		padding: 5px 10px;
-		outline: none;
-	}
-
-	input::placeholder {
-		color: var(--font-color-sub);
-		opacity: 0.8;
-	}
-
-	input:focus {
-		border: 2px solid var(--input-focus);
-	}
-</style>
+<input
+	type="text"
+	inputmode="text"
+	{placeholder}
+	class="w-input h-9 rounded-md border-2 border-dark bg-white shadow-input text-sm font-semibold text-dark py-1 px-2 outline-none placeholder:text-grey placeholder:opacity-80 focus:border-green"
+/>

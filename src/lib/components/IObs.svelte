@@ -36,8 +36,8 @@
 	});
 </script>
 
-<div bind:this={container}>
-	<div class="transitioning-div hide-animation" style="--delay: {delay}ms">
+<div bind:this={container} class='w-full'>
+	<div class="transitioning-div hide-animation flex flex-col items-center" style="--delay: {delay}ms">
 		<slot {intersecting} />
 	</div>
 </div>

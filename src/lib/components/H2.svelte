@@ -1,0 +1,1 @@
+<h2 class="text-lg text-center font-medium font-agdasima"><slot /></h2>

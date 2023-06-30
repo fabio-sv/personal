@@ -1,14 +1,15 @@
 <script>
+	import H1 from '$lib/components/H1.svelte';
+	import H2 from '$lib/components/H2.svelte';
 	import IObs from '$lib/components/IObs.svelte';
+	import PageLayout from '$lib/components/PageLayout.svelte';
 </script>
 
-<main class="text-dark font-open text-2xs text-center z-10 relative snap-y snap-proximity">
-	<article class="w-full min-h-screen flex flex-col justify-center items-center px-8 snap-start">
-		<IObs>
-			<h1 class="text-2xl font-bold">Thank you!</h1>
-		</IObs>
-		<IObs delay={200}>
-			<h2 class="text-lg font-medium">I will be in touch with you shortly.</h2>
-		</IObs>
-	</article>
-</main>
+<PageLayout>
+	<IObs>
+		<H1>Thank you!</H1>
+	</IObs>
+	<IObs delay={200}>
+		<H2>I will be in touch with you shortly.</H2>
+	</IObs>
+</PageLayout>

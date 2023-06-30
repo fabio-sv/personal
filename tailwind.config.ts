@@ -14,10 +14,16 @@ export default {
 			},
 			colors: {
 				light: '#FAFAFA',
-				dark: '#252525'
+				dark: '#252525',
+				green: '#153f01',
+				grey: '#666'
 			},
 			boxShadow: {
-				button: '3px 3px #252525'
+				button: '3px 3px #252525',
+				input: '4px 4px #252525'
+			},
+			width: {
+				input: 'min(100%,30rem)'
 			}
 		}
 	},
