@@ -1,13 +1,14 @@
 <script>
 	import H1 from '$lib/components/H1.svelte';
+	import H3 from '$lib/components/H3.svelte';
 	import PageLayout from '$lib/components/PageLayout.svelte';
 	import TimelineElement from '$lib/components/TimelineElement.svelte';
 </script>
 
 <PageLayout class="gap-y-0">
-	<H1>RESUME</H1>
+	<H1>My CV</H1>
 
-	<div class="my-8" />
+	<H3>Experience</H3>
 
 	<section class="grid grid-cols-timeline w-full max-w-xl place-items-center">
 		<TimelineElement
@@ -20,7 +21,7 @@
 
 		<TimelineElement
 			option="right"
-			title="UNISA"
+			title="University of South Africa"
 			description="BSc Applied Mathematics and Computer Science - Cum Laude"
 			dates="01/2019 - 11/2021"
 			location="Correspondence"
@@ -29,7 +30,7 @@
 		<TimelineElement
 			option="left"
 			title="Boksburg High School"
-			description="Physics. EGD. Computers. Math. Cum Laude."
+			description="Physics. EGD. Computers. Math. RCL. Cum Laude."
 			dates="01/2014 - 12/2018"
 			location="Boksburg, Ekurhuleni"
 		/>

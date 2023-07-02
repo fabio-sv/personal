@@ -42,7 +42,7 @@
 			<H2>Tech enthusiast</H2>
 		</Typewriter>
 
-		<Button href="/cv">Resume</Button>
+		<Button href="/cv">View my CV</Button>
 	</IObs>
 	<BouncingArrow {atBottom} />
 </PageLayout>

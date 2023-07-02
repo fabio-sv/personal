@@ -43,3 +43,7 @@
 	background: 0;
 	border-radius: 0;
 }
+
+.typing::after {
+	margin-top: 3px;
+}
