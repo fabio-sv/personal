@@ -9,8 +9,8 @@ export default {
 				'3xs': '8px'
 			},
 			fontFamily: {
-				open: ['"Open Sans"', 'sans-serif'],
-				agdasima: ['"Agdasima"', 'sans-serif']
+				open: ['Open Sans', 'sans-serif'],
+				agdasima: ['Agdasima', 'sans-serif']
 			},
 			gridTemplateColumns: {
 				timeline: '1fr 2rem 1fr'
@@ -18,7 +18,6 @@ export default {
 			colors: {
 				light: '#FAFAFA',
 				dark: '#252525',
-				green: '#153f01',
 				grey: '#666'
 			},
 			boxShadow: {

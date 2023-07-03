@@ -3,16 +3,65 @@
 	import H3 from '$lib/components/H3.svelte';
 	import PageLayout from '$lib/components/PageLayout.svelte';
 	import TimelineElement from '$lib/components/TimelineElement.svelte';
-
+	import Qualification from '$lib/components/Qualification.svelte';
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import IconAWS from 'svelte-icons-pack/si/SiAmazonaws';
 	import IconBook from 'svelte-icons-pack/fi/FiBookOpen';
-	import IconLink from 'svelte-icons-pack/fi/FiExternalLink';
-	import Qualification from '$lib/components/Qualification.svelte';
+	import IconReact from 'svelte-icons-pack/si/SiReact';
+	import IconNode from 'svelte-icons-pack/si/SiNodedotjs';
+	import IconTypescript from 'svelte-icons-pack/si/SiTypescript';
+	import IconDotNet from 'svelte-icons-pack/si/SiDotnet';
+	import IconSvelte from 'svelte-icons-pack/si/SiSvelte';
 </script>
 
 <PageLayout class="gap-y-0 my-8">
 	<H1>My CV</H1>
+
+	<H3>Primary skill set</H3>
+
+	<section class="font-semibold flex flex-wrap justify-center gap-2 max-w-sm">
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-yellow-600/20 text-yellow-600"
+		>
+			<Icon src={IconAWS} title="AWS" color="#a16207" />
+			<p>AWS</p>
+		</div>
+
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-red-600/20 text-red-600"
+		>
+			<Icon src={IconReact} title="React" color="#dc2626" />
+			React
+		</div>
+
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
+		>
+			<Icon src={IconNode} title="Node.js" color="#16a34a" />
+			Node.js
+		</div>
+
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
+		>
+			<Icon src={IconTypescript} title="TypeScript" color="#2563eb" />
+			TypeScript
+		</div>
+
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-purple-600/20 text-purple-600"
+		>
+			<Icon src={IconDotNet} title="ASP.NET Core" color="#9333ea" />
+			ASP.NET Core
+		</div>
+
+		<div
+			class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-orange-600/20 text-orange-600"
+		>
+			<Icon src={IconSvelte} title="Svelte" color="#ea580c" />
+			Svelte
+		</div>
+	</section>
 
 	<H3>Experience</H3>
 
@@ -54,7 +103,7 @@
 			alt="AWS"
 			title="Certified AWS Developer Associate"
 			subtext="October 2022"
-			href="/files/aws-certified-developer-associate.pdf"
+			href="/files/fsv-aws-dev-assoc.pdf"
 		/>
 
 		<Qualification
@@ -62,7 +111,7 @@
 			alt="AWS"
 			title="BSc. Applied Mathematics & Computer Science"
 			subtext="November 2021"
-			href="/files/unisa-degree-certificate.pdf"
+			href="/files/fsv-unisa-certificate.pdf"
 		/>
 	</section>
 </PageLayout>
