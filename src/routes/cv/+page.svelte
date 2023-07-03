@@ -6,7 +6,8 @@
 
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import IconAWS from 'svelte-icons-pack/si/SiAmazonaws';
-	import IconBoook from 'svelte-icons-pack/fi/FiBook';
+	import IconBook from 'svelte-icons-pack/fi/FiBookOpen';
+	import IconLink from 'svelte-icons-pack/fi/FiExternalLink';
 </script>
 
 <PageLayout class="gap-y-0 my-8">
@@ -46,13 +47,29 @@
 
 	<H3>Qualifications</H3>
 
-	<div class="flex justify-start items-center gap-x-4 w-full pl-8 text-left">
-		<Icon src={IconAWS} title="AWS" size="2rem" />
-		<p class="text-xs">Certified AWS Developer Associate</p>
-	</div>
+	<section class="max-w-xl mx-auto space-y-4 px-4">
+		<div class="flex justify-between items-center gap-x-4 w-full text-left">
+			<Icon src={IconAWS} title="AWS" size="2rem" />
+			<aside class="w-[90%]">
+				<p class="text-xs">Certified AWS Developer Associate</p>
+				<p class="flex items-center justify-start text-right gap-x-1 text-dark/90 text-2xs">
+					October 2022
+				</p>
+			</aside>
+			<a href="/files/aws-certified-developer-associate.pdf" target="blank" rel="noreferrer"
+				><Icon src={IconLink} title="link" size="1rem" /></a
+			>
+		</div>
 
-	<div class="flex justify-start items-center gap-x-4 w-full pl-8 text-left">
-		<Icon src={IconBoook} title="Book" size="2rem" />
-		<p class="text-xs">BSc. Applied Mathematics & Computer Science</p>
-	</div>
+		<div class="flex justify-between items-center gap-x-4 w-full text-left">
+			<Icon src={IconBook} title="AWS" size="2rem" />
+			<aside class="w-[90%]">
+				<p class="text-xs">BSc. Applied Mathematics & Computer Science</p>
+				<p class="flex items-center justify-start text-dark/90 text-3xs">October 2022</p>
+			</aside>
+			<a href="/files/unisa-degree-certificate.pdf" target="blank" rel="noreferrer"
+				><Icon src={IconLink} title="link" size="1rem" /></a
+			>
+		</div>
+	</section>
 </PageLayout>

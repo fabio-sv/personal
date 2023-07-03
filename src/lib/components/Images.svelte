@@ -4,9 +4,9 @@
 	import ImageText from './ImageText.svelte';
 </script>
 
-<section class="grid grid-cols-4 gap-y-4 gap-x-2 sm:max-w-lg">
+<section class="grid grid-cols-5 sm:grid-cols-8 gap-y-4 gap-x-2 sm:max-w-lg">
 	{#each icons as icon, i (i)}
-		<IObs delay={i * 25 + (i % 4) * 100} once>
+		<IObs delay={i * 25 + (i % 5) * 100} once>
 			<ImageText {...icon} />
 		</IObs>
 	{/each}
