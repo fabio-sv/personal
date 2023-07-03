@@ -8,6 +8,7 @@
 	import IconAWS from 'svelte-icons-pack/si/SiAmazonaws';
 	import IconBook from 'svelte-icons-pack/fi/FiBookOpen';
 	import IconLink from 'svelte-icons-pack/fi/FiExternalLink';
+	import Qualification from '$lib/components/Qualification.svelte';
 </script>
 
 <PageLayout class="gap-y-0 my-8">
@@ -48,28 +49,20 @@
 	<H3>Qualifications</H3>
 
 	<section class="max-w-xl mx-auto space-y-4 px-4">
-		<div class="flex justify-between items-center gap-x-4 w-full text-left">
-			<Icon src={IconAWS} title="AWS" size="2rem" />
-			<aside class="w-[90%]">
-				<p class="text-xs">Certified AWS Developer Associate</p>
-				<p class="flex items-center justify-start text-right gap-x-1 text-dark/90 text-2xs">
-					October 2022
-				</p>
-			</aside>
-			<a href="/files/aws-certified-developer-associate.pdf" target="blank" rel="noreferrer"
-				><Icon src={IconLink} title="link" size="1rem" /></a
-			>
-		</div>
+		<Qualification
+			icon={IconAWS}
+			alt="AWS"
+			title="Certified AWS Developer Associate"
+			subtext="October 2022"
+			href="/files/aws-certified-developer-associate.pdf"
+		/>
 
-		<div class="flex justify-between items-center gap-x-4 w-full text-left">
-			<Icon src={IconBook} title="AWS" size="2rem" />
-			<aside class="w-[90%]">
-				<p class="text-xs">BSc. Applied Mathematics & Computer Science</p>
-				<p class="flex items-center justify-start text-dark/90 text-3xs">October 2022</p>
-			</aside>
-			<a href="/files/unisa-degree-certificate.pdf" target="blank" rel="noreferrer"
-				><Icon src={IconLink} title="link" size="1rem" /></a
-			>
-		</div>
+		<Qualification
+			icon={IconBook}
+			alt="AWS"
+			title="BSc. Applied Mathematics & Computer Science"
+			subtext="November 2021"
+			href="/files/unisa-degree-certificate.pdf"
+		/>
 	</section>
 </PageLayout>

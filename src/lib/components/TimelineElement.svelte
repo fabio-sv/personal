@@ -21,7 +21,7 @@
 
 	<IObs>
 		<div class="text-xs text-right py-2 w-full">
-			<p class="font-medium">{description}</p>
+			<p class="font-medium pl-1">{description}</p>
 
 			<mark
 				class="flex items-center justify-end text-left gap-x-1 bg-transparent text-dark/90 text-2xs pt-2"
@@ -49,7 +49,7 @@
 	<div class="w-[2px] h-full bg-dark drop-shadow-sm tranisition-all" />
 	<IObs>
 		<div class="text-xs text-left py-2 w-full">
-			<p class="font-medium">{description}</p>
+			<p class="font-medium pr-1">{description}</p>
 
 			<mark
 				class="flex items-center justify-start text-right gap-x-1 bg-transparent text-dark/90 text-2xs pt-2"
