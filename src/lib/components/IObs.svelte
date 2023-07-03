@@ -4,6 +4,10 @@
 	export let once = false;
 	export let delay = 0;
 
+	let className = '';
+
+	export { className as class };
+
 	let intersecting = false;
 	let container: HTMLDivElement;
 
@@ -36,7 +40,7 @@
 	});
 </script>
 
-<div bind:this={container} class="w-full">
+<div bind:this={container} class={`w-full ${className}`}>
 	<div
 		class="transitioning-div hide-animation flex flex-col items-center"
 		style="--delay: {delay}ms"
