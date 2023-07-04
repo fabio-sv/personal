@@ -12,71 +12,81 @@
 	import IconTypescript from 'svelte-icons-pack/si/SiTypescript';
 	import IconDotNet from 'svelte-icons-pack/si/SiDotnet';
 	import IconSvelte from 'svelte-icons-pack/si/SiSvelte';
+	import IconTerraform from 'svelte-icons-pack/si/SiTerraform';
 	import IObs from '$lib/components/IObs.svelte';
 </script>
 
 <PageLayout class="gap-y-0 my-8">
-	<IObs><H1>My CV</H1></IObs>
+	<IObs once><H1>My CV</H1></IObs>
 
-	<IObs delay={200}><H3>Primary skill set</H3></IObs>
+	<IObs once delay={200}><H3>Primary skill set</H3></IObs>
 
 	<section class="font-semibold flex flex-wrap justify-center gap-2 max-w-sm">
-		<IObs class="!w-fit" delay={300}>
+		<IObs once class="!w-fit" delay={300}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-yellow-600/20 text-yellow-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-yellow-600/20 text-yellow-600"
 			>
 				<Icon src={IconAWS} title="AWS" color="#a16207" />
 				<p>AWS</p>
 			</div>
 		</IObs>
 
-		<IObs class="!w-fit" delay={400}>
+		<IObs once class="!w-fit" delay={400}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-red-600/20 text-red-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-red-600/20 text-red-600"
 			>
 				<Icon src={IconReact} title="React" color="#dc2626" />
 				React
 			</div>
 		</IObs>
 
-		<IObs class="!w-fit" delay={500}>
+		<IObs once class="!w-fit" delay={500}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
 			>
 				<Icon src={IconNode} title="Node.js" color="#16a34a" />
 				Node.js
 			</div>
 		</IObs>
 
-		<IObs class="!w-fit" delay={700}>
+		<IObs once class="!w-fit" delay={700}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
 			>
 				<Icon src={IconTypescript} title="TypeScript" color="#2563eb" />
 				TypeScript
 			</div>
 		</IObs>
 
-		<IObs class="!w-fit" delay={800}>
+		<IObs once class="!w-fit" delay={800}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-purple-600/20 text-purple-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-purple-600/20 text-purple-600"
 			>
 				<Icon src={IconDotNet} title="ASP.NET Core" color="#9333ea" />
 				ASP.NET Core
 			</div>
 		</IObs>
 
-		<IObs class="!w-fit" delay={900}>
+		<IObs once class="!w-fit" delay={900}>
 			<div
-				class="flex gap-x-4 justify-start items-center px-2 py-1 rounded-md bg-orange-600/20 text-orange-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-orange-600/20 text-orange-600"
 			>
 				<Icon src={IconSvelte} title="Svelte" color="#ea580c" />
 				Svelte
 			</div>
 		</IObs>
+
+		<IObs once class="!w-fit" delay={900}>
+			<div
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-pink-600/20 text-pink-600"
+			>
+				<Icon src={IconTerraform} title="Terraform" color="#db2777" />
+				Terraform
+			</div>
+		</IObs>
 	</section>
 
-	<IObs delay={200}><H3>Experience</H3></IObs>
+	<IObs once delay={200}><H3>Experience</H3></IObs>
 
 	<section class="grid grid-cols-timeline w-full max-w-xl place-items-center">
 		<TimelineElement
@@ -108,10 +118,10 @@
 		<div />
 	</section>
 
-	<IObs delay={200}><H3>Qualifications</H3></IObs>
+	<IObs once delay={200}><H3>Qualifications</H3></IObs>
 
 	<section class="max-w-xl mx-auto space-y-4 px-4">
-		<IObs
+		<IObs once
 			><Qualification
 				icon={IconAWS}
 				alt="AWS"
@@ -121,7 +131,7 @@
 			/></IObs
 		>
 
-		<IObs
+		<IObs once
 			><Qualification
 				icon={IconBook}
 				alt="AWS"
