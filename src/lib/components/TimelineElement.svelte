@@ -15,11 +15,11 @@
 </script>
 
 {#if option === 'left'}
-	<IObs><H2 class="text-right w-full pr-1">{title}</H2></IObs>
+	<IObs once><H2 class="text-right w-full pr-1">{title}</H2></IObs>
 	<div class="w-8 h-8 rounded-full border-2 border-light bg-dark drop-shadow-sm" />
 	<div />
 
-	<IObs>
+	<IObs once>
 		<div class="text-xs text-right py-2 w-full">
 			<p class="font-medium pl-1">{description}</p>
 
@@ -43,11 +43,11 @@
 {:else}
 	<div />
 	<div class="w-8 h-8 rounded-full border-2 border-light bg-dark drop-shadow-sm" />
-	<IObs><H2 class="text-left w-full pl-1">{title}</H2></IObs>
+	<IObs once><H2 class="text-left w-full pl-1">{title}</H2></IObs>
 
 	<div />
 	<div class="w-[2px] h-full bg-dark drop-shadow-sm tranisition-all" />
-	<IObs>
+	<IObs once>
 		<div class="text-xs text-left py-2 w-full">
 			<p class="font-medium pr-1">{description}</p>
 
