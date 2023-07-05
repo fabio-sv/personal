@@ -43,6 +43,7 @@
 		</Typewriter>
 
 		<Button href="/cv">View my CV</Button>
+		<Button href="/projects">Projects</Button>
 	</IObs>
 	<BouncingArrow {atBottom} />
 </PageLayout>

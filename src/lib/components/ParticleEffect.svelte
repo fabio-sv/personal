@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Particles from 'svelte-particles';
 	import type { ISourceOptions, Engine } from 'tsparticles-engine';
-	import { loadTrianglesPreset } from "tsparticles-preset-triangles";
+	import { loadTrianglesPreset } from 'tsparticles-preset-triangles';
 
 	const particleConfig: ISourceOptions = {
 		preset: 'triangles',
@@ -58,7 +58,7 @@
 					height: 1080
 				},
 				limit: 0,
-				value: 250
+				value: 200
 			},
 			opacity: {
 				value: 0.2

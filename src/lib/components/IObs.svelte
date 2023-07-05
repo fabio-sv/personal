@@ -30,7 +30,7 @@
 					});
 				},
 				{
-					threshold: 0.8
+					threshold: 0.2
 				}
 			);
 
@@ -40,7 +40,7 @@
 	});
 </script>
 
-<div bind:this={container} class={`w-full ${className}`}>
+<div bind:this={container} class={className}>
 	<div
 		class="transitioning-div hide-animation flex flex-col items-center"
 		style="--delay: {delay}ms"
