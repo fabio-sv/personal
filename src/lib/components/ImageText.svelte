@@ -7,5 +7,5 @@
 
 <div class="image-box flex flex-col justify-center items-center">
 	<Icon src={icon} size="0.75rem" className="inline drop-shadow" />
-	<p class="text-3xs text-dark font-semibold w-fit text-center">{name}</p>
+	<p class="text-3xs sm:text-2xs sm:mt-1 text-dark font-semibold w-fit text-center">{name}</p>
 </div>

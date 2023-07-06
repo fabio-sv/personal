@@ -42,8 +42,10 @@
 			<H2>Tech enthusiast</H2>
 		</Typewriter>
 
-		<Button href="/cv">View my CV</Button>
-		<Button href="/projects">Projects</Button>
+		<div class="flex flex-col sm:flex-row-reverse sm:mt-12 gap-x-4">
+			<Button href="/cv">View my CV</Button>
+			<Button href="/projects">Projects</Button>
+		</div>
 	</IObs>
 	<BouncingArrow {atBottom} />
 </PageLayout>
@@ -56,7 +58,7 @@
 	</IObs>
 
 	<IObs once>
-		<p class="text-xs">
+		<p class="text-xs sm:text-sm">
 			I am a 23 year old software engineer and problem solving
 			<a
 				class="relative underline italic"

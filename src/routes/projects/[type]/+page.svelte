@@ -21,38 +21,48 @@
 </script>
 
 <PageLayout>
-	<H3>{config.name}</H3>
+	<IObs once class="mt-8"><H3>{config.name}</H3></IObs>
 
-	<img src={config.logo.src} alt={config.name} class="max-h-32 mt-auto" />
+	<IObs once delay={50} class="mt-auto">
+		<img src={config.logo.src} alt={config.name} class="max-h-32" />
+	</IObs>
 
-	<p class="text-xs px-4 max-w-xl">
+	<p class="text-xs sm:text-sm px-4 max-w-xl my-4">
 		{#each [...config.description] as desc, i (i)}
-			{desc} <br />
+			<IObs once delay={50 * i * 2 + 50}>
+				{desc} <br />
+			</IObs>
 		{/each}
 	</p>
 
 	{#if config.url}
-		<a href={config.url} class="flex items-center gap-x-1 text-xs underline">
-			{config.name}
-			<Icon src={IconLink} title="Link" />
-		</a>
+		<IObs once delay={200}>
+			<a href={config.url} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
+				{config.name}
+				<Icon src={IconLink} title="Link" />
+			</a>
+		</IObs>
 	{/if}
 
 	{#if config.repo}
-		<a href={config.repo} class="flex items-center gap-x-1 text-xs underline">
-			Repo
-			<Icon src={IconLink} title="Link" />
-		</a>
+		<IObs once delay={200}>
+			<a href={config.repo} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
+				Repo
+				<Icon src={IconLink} title="Link" />
+			</a>
+		</IObs>
 	{/if}
 
 	{#if config.wiki}
-		<a href={config.wiki} class="flex items-center gap-x-1 text-xs underline">
-			Wiki
-			<Icon src={IconLink} title="Link" />
-		</a>
+		<IObs once delay={200}>
+			<a href={config.wiki} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
+				Wiki
+				<Icon src={IconLink} title="Link" />
+			</a>
+		</IObs>
 	{/if}
 
-	<p class="text-gray-600">Technologies used:</p>
+	<IObs><p class="text-gray-600 sm:text-xs mt-4">Technologies used:</p></IObs>
 	<section class="font-semibold flex flex-wrap justify-center gap-2 max-w-sm mb-auto">
 		{#each [...config.technologies] as tech, i (i)}
 			<IObs once class="!w-fit">

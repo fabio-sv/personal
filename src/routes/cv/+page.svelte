@@ -88,7 +88,7 @@
 
 	<IObs once delay={200}><H3>Experience</H3></IObs>
 
-	<section class="grid grid-cols-timeline w-full max-w-xl place-items-center">
+	<section class="grid grid-cols-timeline w-full max-w-2xl place-items-center">
 		<TimelineElement
 			option="left"
 			title="BBD Software"
@@ -121,24 +121,24 @@
 	<IObs once delay={200}><H3>Qualifications</H3></IObs>
 
 	<section class="max-w-xl mx-auto space-y-4 px-4">
-		<IObs once
-			><Qualification
+		<IObs once>
+			<Qualification
 				icon={IconAWS}
 				alt="AWS"
 				title="Certified AWS Developer Associate"
 				subtext="October 2022"
 				href="/files/fsv-aws-dev-assoc.pdf"
-			/></IObs
-		>
+			/>
+		</IObs>
 
-		<IObs once
-			><Qualification
+		<IObs once>
+			<Qualification
 				icon={IconBook}
 				alt="AWS"
 				title="BSc. Applied Mathematics & Computer Science"
 				subtext="November 2021"
 				href="/files/fsv-unisa-certificate.pdf"
-			/></IObs
-		>
+			/>
+		</IObs>
 	</section>
 </PageLayout>

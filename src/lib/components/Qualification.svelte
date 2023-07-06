@@ -12,8 +12,8 @@
 <div class="flex justify-between items-center gap-x-4 w-full text-left">
 	<Icon src={icon} title={alt} size="2rem" />
 	<aside class="w-[90%]">
-		<p class="text-xs">{title}</p>
-		<p class="flex items-center justify-start text-right gap-x-1 text-dark/90 text-2xs">
+		<p class="text-xs sm:text-base">{title}</p>
+		<p class="flex items-center justify-start text-right gap-x-1 text-dark/90 text-2xs sm:text-xs">
 			{subtext}
 		</p>
 	</aside>

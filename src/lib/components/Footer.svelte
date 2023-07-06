@@ -7,7 +7,7 @@
 </script>
 
 <footer
-	class="flex justify-center items-center gap-x-4 w-full py-4 bg-light snap-end relative border-t drop-shadow"
+	class="flex justify-center items-center gap-x-4 sm:gap-x-6 w-full py-4 bg-light snap-end relative border-t drop-shadow"
 >
 	<a href="tel:+27714558340" aria-label="Contact me on my phone number">
 		<Icon src={IconPhone} size="1rem" className="drop-shadow" />

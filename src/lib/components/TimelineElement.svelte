@@ -15,7 +15,7 @@
 </script>
 
 {#if option === 'left'}
-	<IObs once><H2 class="text-right w-full pr-1">{title}</H2></IObs>
+	<IObs once class="w-full"><H2 class="text-right w-full pr-1">{title}</H2></IObs>
 	<div class="w-8 h-8 rounded-full border-2 border-light bg-dark drop-shadow-sm" />
 	<div />
 
@@ -43,7 +43,7 @@
 {:else}
 	<div />
 	<div class="w-8 h-8 rounded-full border-2 border-light bg-dark drop-shadow-sm" />
-	<IObs once><H2 class="text-left w-full pl-1">{title}</H2></IObs>
+	<IObs once class="w-full"><H2 class="text-left w-full pl-1">{title}</H2></IObs>
 
 	<div />
 	<div class="w-[2px] h-full bg-dark drop-shadow-sm tranisition-all" />
