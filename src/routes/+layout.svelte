@@ -4,9 +4,11 @@
 	import '../app.css';
 </script>
 
-<ParticleEffect />
-
-<main class="text-dark font-open text-2xs text-center z-10 relative snap-y snap-proximity min-h-screen flex flex-col">
+<main
+	class="text-dark font-open text-2xs text-center z-10 relative snap-y snap-proximity min-h-screen flex flex-col"
+>
 	<slot />
 	<Footer />
 </main>
+
+<ParticleEffect />
