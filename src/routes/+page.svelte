@@ -23,8 +23,20 @@
 </script>
 
 <PageLayout class="min-h-screen relative">
-	<IObs once>
-		<H1>Fabio Sousa Vieira</H1>
+	<svg fill="#252525">
+		<text
+			x="50%"
+			y="50%"
+			dy=".35em"
+			text-anchor="middle"
+			class="text-5xl sm:text-9xl font-light sm:font-medium"
+		>
+			Fabio Sousa Vieira
+		</text>
+	</svg>
+
+	<!-- <H1>Fabio Sousa Vieira</H1> -->
+	<IObs once delay={5000}>
 		<Typewriter
 			cursor
 			mode="loop"
@@ -41,12 +53,15 @@
 			<H2>Bug fixer</H2>
 			<H2>Tech enthusiast</H2>
 		</Typewriter>
+	</IObs>
 
+	<IObs once delay={5150}>
 		<div class="flex flex-col sm:flex-row-reverse sm:mt-12 gap-x-4">
 			<Button href="/cv">View my CV</Button>
 			<Button href="/projects" variant="secondary">Projects</Button>
 		</div>
 	</IObs>
+
 	<BouncingArrow {atBottom} />
 </PageLayout>
 
@@ -79,3 +94,43 @@
 
 	<Images />
 </section>
+
+<style>
+	svg {
+		font-family: Agdasima;
+		/* font-weight: 700; */
+		width: 100vw;
+		height: 100%;
+	}
+	svg text {
+		animation: stroke 5s;
+		stroke-width: 0;
+		stroke: #252525;
+		color: #252525;
+	}
+	@keyframes stroke {
+		0% {
+			fill: #25252500;
+			stroke: #252525;
+			stroke-dashoffset: 25%;
+			stroke-dasharray: 0 50%;
+			stroke-width: 1;
+		}
+		70% {
+			fill: #25252500;
+			stroke: #252525;
+		}
+		80% {
+			fill: #25252500;
+			stroke: #252525;
+			stroke-width: 1;
+		}
+		100% {
+			fill: #252525;
+			stroke: #25252500;
+			stroke-dashoffset: -25%;
+			stroke-dasharray: 50% 0;
+			stroke-width: 1;
+		}
+	}
+</style>
