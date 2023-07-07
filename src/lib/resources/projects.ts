@@ -68,7 +68,7 @@ export const projects: ProjectType[] = [
 		},
 		description: [
 			'Socketing is a serverless web sockets application, weird right?',
-			'built to show how a web sockets application which intuitively requires a server, can be built without a server.'
+			'built to show how a web sockets application which intuitively requires a server, can be serverless.'
 		],
 		repo: 'https://github.com/FabioSVBBD/sockets',
 		technologies: [
@@ -161,9 +161,9 @@ export const projects: ProjectType[] = [
 			src: '/logos/microfrontend.PNG'
 		},
 		description: [
-			'The goal of this project was to figure out how Microfrontends work and if they would be a good fit for a project we were working on at work.',
+			'The goal of this project was to figure out how Microfrontends work and if they would be a good fit for a project we were planning.',
 			"This POC pushed the microfrontend idea to it's limits by getting different libraries and frameworks - who are not designed to interop - to work together. And they did.",
-			'The idea is that you create a host app, and consume client apps using module federation. How this works is that you expose a function in your app that can be grabbed from a url the app is running on, for example the file exposed at http://localhost:8081/remoteEntry.js can be consumed by the host, which exposes a function that takes in a DOM node and hence the Microfrontend can be hooked up to the host.',
+			'The idea is that you create a host app, and consume client apps using module federation. How this works is you expose a function in your app via a url, for example http://localhost:8081/remoteEntry.js can be consumed by the host, because it exposes a function that takes in a DOM node and attaches the app to that node. So the host calls the function and passes a dom node by reference, and the client attaches itself to the node.',
 			"Ultimately, we did not go with this solution since there are all sorts of complexities involved - such as state sharing between the MFE's in this context can be quite challenging, type safety goes out the window, and consistent styling will almost always prove to be a headache."
 		],
 		repo: 'https://github.com/FabioSVBBD/mono-micro',
@@ -219,9 +219,9 @@ export const projects: ProjectType[] = [
 			src: '/logos/life.png'
 		},
 		description: [
-			'Conway\'s Game of life is a zero player game meaning it\'s evolution is determined by it\'s initial state.',
-			'Each cell is either alive or dead and a cell changes state based on certain rules.',
-			'What\'s interesting about Life is that it\'s Turing complete, meaning that if the game started with specific initial conditions, the game would be able to compute and hence be able to do anything given an impractical amount of memory.'
+			"Conway's Game of life is a zero player game meaning it's evolution is determined by it's initial state.",
+			"Each cell is either alive or dead and a cell changes state based on the state of it's neighbours according to certain rules.",
+			"What's interesting about Life is that it's Turing complete, meaning that if the game started with the correct initial conditions, the game would be able to compute and hence be able to do anything given an impractical amount of memory."
 		],
 		repo: 'https://github.com/FabioSVBBD/conways-game-of-life',
 		wiki: 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life',
@@ -237,7 +237,7 @@ export const projects: ProjectType[] = [
 				backgroundColor: 'rgb(234 179 8 / 0.2)',
 				icon: IconJavaScript,
 				name: 'JavaScript'
-			},
+			}
 		]
-	},
+	}
 ];
