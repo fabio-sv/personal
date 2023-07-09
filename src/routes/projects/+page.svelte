@@ -4,8 +4,6 @@
 	import PageLayout from '$lib/components/PageLayout.svelte';
 	import Project from '$lib/components/Project.svelte';
 
-	import { Button } from 'svelte-hotui';
-
 	let carousel: HTMLDivElement | undefined;
 	let distanceScrolled: number = 0;
 
@@ -76,8 +74,6 @@
 
 <PageLayout class="px-0">
 	<IObs once><H1>Projects</H1></IObs>
-
-	<Button>Hello</Button>
 
 	<div
 		bind:this={carousel}

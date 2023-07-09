@@ -1,7 +1,12 @@
 <script>
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
 	import Footer from '$lib/components/Footer.svelte';
 	import ParticleEffect from '$lib/components/ParticleEffect.svelte';
 	import '../app.css';
+
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <main
