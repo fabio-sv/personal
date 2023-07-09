@@ -20,7 +20,7 @@
 	})();
 </script>
 
-<PageLayout>
+<PageLayout class="px-2">
 	<IObs once class="mt-8"><H3>{config.name}</H3></IObs>
 
 	<IObs once delay={50} class="mt-auto">

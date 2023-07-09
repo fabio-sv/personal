@@ -9,7 +9,7 @@
 	import IconEye from 'svelte-icons-pack/fi/FiEye';
 </script>
 
-<PageLayout>
+<PageLayout class="px-2">
 	<IObs><H1>Looking for something?</H1></IObs>
 	<IObs delay={100}><H2>You've stumbled into a forbidden area.</H2></IObs>
 	<IObs delay={200}><Icon src={IconEye} title="Eye" size="4rem" /></IObs>

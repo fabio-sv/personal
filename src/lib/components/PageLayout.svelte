@@ -5,7 +5,7 @@
 </script>
 
 <article
-	class={`w-full flex-grow flex flex-col justify-center items-center px-2 gap-y-4 snap-start ${className}`}
+	class={`w-full flex-grow flex flex-col justify-center items-center gap-y-4 snap-start ${className}`}
 >
 	<slot />
 </article>

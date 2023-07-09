@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Typewriter from 'svelte-typewriter';
-	import H1 from '$lib/components/H1.svelte';
 	import H2 from '$lib/components/H2.svelte';
 	import H3 from '$lib/components/H3.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -22,14 +21,14 @@
 	});
 </script>
 
-<PageLayout class="min-h-screen relative">
-	<svg fill="#252525">
+<PageLayout class="min-h-screen relative px-2">
+	<svg fill="#252525" class="h-12 sm:h-auto">
 		<text
 			x="50%"
 			y="50%"
 			dy=".35em"
 			text-anchor="middle"
-			class="text-5xl sm:text-9xl font-light sm:font-medium"
+			class="text-6xl sm:text-9xl font-light sm:font-medium"
 		>
 			Fabio Sousa Vieira
 		</text>
@@ -98,9 +97,7 @@
 <style>
 	svg {
 		font-family: Agdasima;
-		/* font-weight: 700; */
 		width: 100vw;
-		height: 100%;
 	}
 	svg text {
 		animation: stroke 5s;

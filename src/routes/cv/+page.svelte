@@ -16,7 +16,7 @@
 	import IObs from '$lib/components/IObs.svelte';
 </script>
 
-<PageLayout class="gap-y-0 my-8">
+<PageLayout class="gap-y-0 my-8 px-2">
 	<IObs once><H1>My CV</H1></IObs>
 
 	<IObs once delay={200}><H3>Primary skill set</H3></IObs>
