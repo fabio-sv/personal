@@ -94,11 +94,11 @@
 		{/each}
 	</div>
 
-	<div class="indicator h-1 w-8" />
+	<!-- <div class="indicator h-1 w-8" /> -->
 </PageLayout>
 
 <style>
-	.indicator {
+	/* .indicator {
 		background: linear-gradient(to right, #ff0000 50%, blue 50%);
-	}
+	} */
 </style>
