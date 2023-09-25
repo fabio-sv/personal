@@ -13,6 +13,7 @@
 	import IconDotNet from 'svelte-icons-pack/si/SiDotnet';
 	import IconSvelte from 'svelte-icons-pack/si/SiSvelte';
 	import IconTerraform from 'svelte-icons-pack/si/SiTerraform';
+	import IconPython from 'svelte-icons-pack/si/SiPython';
 	import IObs from '$lib/components/IObs.svelte';
 </script>
 
@@ -41,6 +42,15 @@
 		</IObs>
 
 		<IObs once class="!w-fit" delay={500}>
+			<div
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-pink-600/20 text-pink-600"
+			>
+				<Icon src={IconTerraform} title="Terraform" color="#db2777" />
+				Terraform
+			</div>
+		</IObs>
+
+		<IObs once class="!w-fit" delay={600}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
 			>
@@ -76,12 +86,12 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={900}>
+		<IObs once class="!w-fit" delay={1000}>
 			<div
-				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-pink-600/20 text-pink-600"
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-gray-600/20 text-gray-600"
 			>
-				<Icon src={IconTerraform} title="Terraform" color="#db2777" />
-				Terraform
+				<Icon src={IconPython} title="Python" color="#4b5563" />
+				Python
 			</div>
 		</IObs>
 	</section>
@@ -90,24 +100,32 @@
 
 	<section class="grid grid-cols-timeline w-full max-w-2xl place-items-center">
 		<TimelineElement
+			option="right"
+			title="Platform engineer"
+			description="BBD Software and Olympus"
+			dates="08/2023 - current"
+			location="Johannesburg, South Africa"
+		/>
+
+		<TimelineElement
 			option="left"
-			title="BBD Software"
-			description="Software engineer at BBD Software and Vodacom Financial Services"
-			dates="12/2021 - current"
+			title="Software engineer"
+			description="BBD Software and Vodacom Financial Services"
+			dates="12/2021 - 07/2023"
 			location="Johannesburg, South Africa"
 		/>
 
 		<TimelineElement
 			option="right"
-			title="University of South Africa"
-			description="BSc Applied Mathematics and Computer Science - Cum Laude"
+			title="University student"
+			description="UNISA - Cum Laude BSc Applied Mathematics and Computer Science."
 			dates="01/2019 - 11/2021"
 			location="Correspondence"
 		/>
 
 		<TimelineElement
 			option="left"
-			title="Boksburg High School"
+			title="High School student"
 			description="Physics. EGD. Computers. Math. RCL. Cum Laude."
 			dates="01/2014 - 12/2018"
 			location="Ekurhuleni, South Africa"

@@ -19,7 +19,7 @@
 	<div class="w-8 h-8 rounded-full border-2 border-light bg-dark drop-shadow-sm" />
 	<div />
 
-	<IObs once>
+	<IObs once class="w-full">
 		<div class="text-xs text-right py-2 w-full">
 			<p class="font-medium pl-1">{description}</p>
 
@@ -47,7 +47,7 @@
 
 	<div />
 	<div class="w-[2px] h-full bg-dark drop-shadow-sm tranisition-all" />
-	<IObs once>
+	<IObs once class="w-full">
 		<div class="text-xs text-left py-2 w-full">
 			<p class="font-medium pr-1">{description}</p>
 
