@@ -102,7 +102,7 @@
 		<TimelineElement
 			option="right"
 			title="Platform engineer"
-			description="BBD Software and Olympus"
+			description="BBD Software"
 			dates="08/2023 - current"
 			location="Johannesburg, South Africa"
 		/>
