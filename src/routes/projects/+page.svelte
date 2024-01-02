@@ -61,6 +61,21 @@
 			title: {
 				text: 'Life'
 			}
+		},
+		{
+			href: '/projects/cluedo',
+			image: '/images/cluedo.png',
+			title: {
+				text: 'Cluedo'
+			}
+		},
+		{
+			href: '/projects/terminal',
+			image: '/images/terminal.png',
+			title: {
+				text: 'Termiwebsite'
+			},
+			color: '#FAFAFA'
 		}
 	];
 
@@ -81,16 +96,11 @@
 		class="flex overflow-x-auto w-full gap-x-2 mt-12 [&>:first-child]:ml-auto [&>:last-child]:mr-auto snap-x snap-mandatory px-2"
 	>
 		{#each projects as project, i (i)}
-			<IObs once>
-				<Project href={project.href} image={project.image} color={project.color}>
-					<p
-						class={project.title.smaller ? 'text-2xl' : 'text-3xl'}
-						style="color: {project.color};"
-					>
-						{project.title.text}
-					</p>
-				</Project>
-			</IObs>
+			<Project href={project.href} image={project.image} color={project.color}>
+				<p class={project.title.smaller ? 'text-2xl' : 'text-3xl'} style="color: {project.color};">
+					{project.title.text}
+				</p>
+			</Project>
 		{/each}
 	</div>
 

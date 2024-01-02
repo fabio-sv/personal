@@ -3,6 +3,7 @@
 	import H3 from '$lib/components/H3.svelte';
 	import IObs from '$lib/components/IObs.svelte';
 	import PageLayout from '$lib/components/PageLayout.svelte';
+	// @ts-ignore
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import IconLink from 'svelte-icons-pack/fi/FiExternalLink';
 	import { projects } from '$lib/resources/projects';
@@ -44,14 +45,14 @@
 		</IObs>
 	{/if}
 
-	{#if config.repo}
+	{#each config.repo as repo}
 		<IObs once delay={200}>
-			<a href={config.repo} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
+			<a href={repo} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
 				Repo
 				<Icon src={IconLink} title="Link" />
 			</a>
 		</IObs>
-	{/if}
+	{/each}
 
 	{#if config.wiki}
 		<IObs once delay={200}>
@@ -63,7 +64,7 @@
 	{/if}
 
 	<IObs><p class="text-gray-600 sm:text-xs mt-4">Technologies used:</p></IObs>
-	<section class="font-semibold flex flex-wrap justify-center gap-2 max-w-sm mb-auto">
+	<section class="font-semibold flex flex-wrap justify-center gap-2 max-w-sm mb-auto sm:mb-2">
 		{#each [...config.technologies] as tech, i (i)}
 			<IObs once class="!w-fit">
 				<div
