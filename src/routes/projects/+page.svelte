@@ -51,7 +51,6 @@
 			href: '/projects/micromania',
 			image: '/images/mono-micro.PNG',
 			title: {
-				smaller: true,
 				text: 'Micro Mania'
 			}
 		},
