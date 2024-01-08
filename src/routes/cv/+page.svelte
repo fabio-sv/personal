@@ -139,7 +139,8 @@
 	<IObs once delay={200}><H3>Qualifications</H3></IObs>
 
 	<section class="max-w-xl mx-auto space-y-4 px-4">
-		<IObs once>
+		Contact me to find out more!
+		<!-- <IObs once>
 			<Qualification
 				icon={IconAWS}
 				alt="AWS"
@@ -157,6 +158,6 @@
 				subtext="November 2021"
 				href="/files/fsv-unisa-certificate.pdf"
 			/>
-		</IObs>
+		</IObs> -->
 	</section>
 </PageLayout>
