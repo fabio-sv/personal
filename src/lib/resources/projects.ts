@@ -155,8 +155,8 @@ export const projects: ProjectType[] = [
 		]
 	},
 	{
-		urlName: 'microfrontend-poc',
-		name: 'Microfrontend POC',
+		urlName: 'micromania',
+		name: 'Micro Mania',
 		logo: {
 			src: '/logos/microfrontend.PNG'
 		},
@@ -252,6 +252,7 @@ export const projects: ProjectType[] = [
 			"2. What is the most optimal way to ask questions such that you gain the most amount of information and minimize information leak to the other players.",
 			"These 2 projects were meant to solve this issue."
 		],
+		url: 'https://cluedo-sheet-smoky.vercel.app/',
 		repo: ['https://github.com/fabio-sv/cluedo', 'https://github.com/fabio-sv/cluedo-sheet'],
 		technologies: [
 			{
@@ -278,6 +279,7 @@ export const projects: ProjectType[] = [
 			"Ever seen those cool websites people make that look like a shell?",
 			"Yea I wanted to make my own"
 		],
+		url: 'https://termiwebsite.vercel.app/',
 		repo: ['https://github.com/fabio-sv/termiwebsite'],
 		technologies: [
 			{

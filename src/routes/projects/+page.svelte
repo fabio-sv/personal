@@ -48,11 +48,11 @@
 			color: '#FAFAFA'
 		},
 		{
-			href: '/projects/microfrontend-poc',
+			href: '/projects/micromania',
 			image: '/images/mono-micro.PNG',
 			title: {
 				smaller: true,
-				text: 'Microfrontend POC'
+				text: 'Micro Mania'
 			}
 		},
 		{

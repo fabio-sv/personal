@@ -45,10 +45,10 @@
 		</IObs>
 	{/if}
 
-	{#each config.repo as repo}
+	{#each config.repo as repo, i}
 		<IObs once delay={200}>
 			<a href={repo} class="flex items-center gap-x-1 text-xs sm:text-sm underline">
-				Repo
+				Repo {i + 1}
 				<Icon src={IconLink} title="Link" />
 			</a>
 		</IObs>
