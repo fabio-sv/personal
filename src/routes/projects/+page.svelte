@@ -26,6 +26,14 @@
 			}
 		},
 		{
+			href: '/projects/sandy',
+			image: '/images/sandy.png',
+			title: {
+				text: 'Sandy'
+			},
+			color: '#FAFAFA'
+		},
+		{
 			href: '/projects/socketing',
 			image: '/images/sockets.PNG',
 			title: {

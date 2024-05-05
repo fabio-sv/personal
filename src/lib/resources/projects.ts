@@ -289,5 +289,25 @@ export const projects: ProjectType[] = [
 				name: 'Solid.js'
 			}
 		]
+	},
+	{
+		urlName: "sandy",
+		name: "Sandy",
+		logo: {
+			src: '/logos/sandy.png',
+		},
+		description: [
+			"Physics simulations go brr"
+		],
+		url: 'https://sand-three.vercel.app/',
+		repo: ["https://github.com/fabio-sv/sand"],
+		technologies: [
+			{
+				color: '#eab308',
+				backgroundColor: 'rgb(234 179 8 / 0.2)',
+				icon: IconJavaScript,
+				name: 'JavaScript'
+			},
+		]
 	}
 ];
