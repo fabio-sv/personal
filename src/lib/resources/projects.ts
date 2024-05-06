@@ -223,6 +223,7 @@ export const projects: ProjectType[] = [
 			"Each cell is either alive or dead and a cell changes state based on the state of it's neighbours according to certain rules.",
 			"What's interesting about Life is that it's Turing complete, meaning that if the game started with the correct initial conditions, the game would be able to compute and hence be able to do anything given an impractical amount of memory."
 		],
+		url: 'https://conways-game-of-life-cyan.vercel.app/',
 		repo: ['https://github.com/FabioSVBBD/conways-game-of-life'],
 		wiki: 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life',
 		technologies: [
