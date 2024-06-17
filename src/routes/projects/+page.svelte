@@ -85,13 +85,6 @@
 			color: '#FAFAFA'
 		}
 	];
-
-	$: console.log({
-		distanceScrolled,
-		scrollWidth: carousel?.scrollWidth,
-		perc: (distanceScrolled / (carousel?.scrollWidth || 1)) * 100,
-		percEnd: ((distanceScrolled + window.innerWidth) / (carousel?.scrollWidth || 1)) * 100
-	});
 </script>
 
 <PageLayout class="px-0">
