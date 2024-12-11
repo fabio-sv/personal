@@ -36,7 +36,6 @@
 		</text>
 	</svg>
 
-	<!-- <H1>Fabio Sousa Vieira</H1> -->
 	<IObs once delay={5000}>
 		<Typewriter
 			cursor

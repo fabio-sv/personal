@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { getRandomRGBAHexColor } from '$lib/resources/utils';
 	import Particles from 'svelte-particles';
 	import type { ISourceOptions, Engine } from 'tsparticles-engine';
 	import { loadTrianglesPreset } from 'tsparticles-preset-triangles';
+
+	const randomColor = getRandomRGBAHexColor();
 
 	const particleConfig: ISourceOptions = {
 		preset: 'triangles',
@@ -85,7 +88,7 @@
 			line_linked: {
 				enable: true,
 				distance: 110,
-				color: '#252525',
+				color: randomColor,
 				opacity: 0.05,
 				frequency: 2,
 				width: 1
