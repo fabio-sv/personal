@@ -50,7 +50,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={1000}>
+		<IObs once class="!w-fit" delay={600}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-gray-600/20 text-gray-600"
 			>
@@ -59,7 +59,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={600}>
+		<IObs once class="!w-fit" delay={700}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
 			>
@@ -68,7 +68,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={700}>
+		<IObs once class="!w-fit" delay={800}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
 			>
@@ -77,7 +77,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={800}>
+		<IObs once class="!w-fit" delay={900}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-purple-600/20 text-purple-600"
 			>
@@ -86,7 +86,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={900}>
+		<IObs once class="!w-fit" delay={1000}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-orange-600/20 text-orange-600"
 			>
