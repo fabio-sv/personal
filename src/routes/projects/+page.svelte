@@ -83,6 +83,13 @@
 				text: 'Termiwebsite'
 			},
 			color: '#FAFAFA'
+		},
+		{
+			href: '/projects/flowt',
+			image: '/images/flowt.png',
+			title: {
+				text: 'Flowt'
+			}
 		}
 	];
 </script>
@@ -103,12 +110,4 @@
 			</Project>
 		{/each}
 	</div>
-
-	<!-- <div class="indicator h-1 w-8" /> -->
 </PageLayout>
-
-<style>
-	/* .indicator {
-		background: linear-gradient(to right, #ff0000 50%, blue 50%);
-	} */
-</style>

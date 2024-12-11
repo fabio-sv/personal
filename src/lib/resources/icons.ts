@@ -22,6 +22,10 @@ import IconSentry from 'svelte-icons-pack/si/SiSentry';
 import IconBash from 'svelte-icons-pack/si/SiGnubash';
 import IconNode from 'svelte-icons-pack/si/SiNodedotjs';
 import IconDocker from 'svelte-icons-pack/si/SiDocker';
+import IconPython from 'svelte-icons-pack/si/SiPython';
+import IconKubernetes from 'svelte-icons-pack/si/SiKubernetes';
+import IconAzureAD from 'svelte-icons-pack/si/SiMicrosoftazure';
+import IconGolang from 'svelte-icons-pack/si/SiGo';
 
 type IconType = {
 	icon: unknown;
@@ -31,26 +35,22 @@ type IconType = {
 export const icons: IconType[] = [
 	{ icon: IconAWS, name: 'AWS' },
 	{ icon: IconTerraform, name: 'Terraform' },
-	{ icon: IconRDS, name: 'PostGreSQL' },
+	{ icon: IconKubernetes, name: 'Kubernetes' },
+	{ icon: IconPython, name: 'Python' },
 	{ icon: IconGithubActions, name: 'GH Actions' },
+	{ icon: IconAzureAD, name: 'Azure AD' },
+	{ icon: IconBash, name: 'Bash' },
+	{ icon: IconGit, name: 'Git' },
 	{ icon: IconDocker, name: 'Docker' },
-	{ icon: IconSentry, name: 'Sentry' },
-	{ icon: IconCSharp, name: 'C#' },
-	{ icon: IconDotNet, name: '.NET Core' },
-	{ icon: IconSpring, name: 'Spring Boot' },
+	{ icon: IconGolang, name: 'Golang' },
 	{ icon: IconCpp, name: 'C++' },
-	{ icon: IconQt, name: 'Qt' },
 	{ icon: IconTypescript, name: 'TypeScript' },
 	{ icon: IconJavascript, name: 'JavaScript' },
 	{ icon: IconNode, name: 'Node.js' },
 	{ icon: IconDeno, name: 'Deno' },
 	{ icon: IconReact, name: 'React' },
 	{ icon: IconNext, name: 'Next.js' },
-	{ icon: IconRemix, name: 'Remix' },
 	{ icon: IconSvelte, name: 'Svelte' },
 	{ icon: IconSolid, name: 'Solid.js' },
-	{ icon: IconAngular, name: 'Angular' },
-	{ icon: IconTailwind, name: 'Tailwind' },
-	{ icon: IconGit, name: 'Git' },
-	{ icon: IconBash, name: 'Bash' }
+	{ icon: IconDotNet, name: '.NET Core' },
 ];

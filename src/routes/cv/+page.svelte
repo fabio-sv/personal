@@ -50,6 +50,15 @@
 			</div>
 		</IObs>
 
+		<IObs once class="!w-fit" delay={1000}>
+			<div
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-gray-600/20 text-gray-600"
+			>
+				<Icon src={IconPython} title="Python" color="#4b5563" />
+				Python
+			</div>
+		</IObs>
+
 		<IObs once class="!w-fit" delay={600}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
@@ -85,15 +94,6 @@
 				Svelte
 			</div>
 		</IObs>
-
-		<IObs once class="!w-fit" delay={1000}>
-			<div
-				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-gray-600/20 text-gray-600"
-			>
-				<Icon src={IconPython} title="Python" color="#4b5563" />
-				Python
-			</div>
-		</IObs>
 	</section>
 
 	<IObs once delay={200}><H3>Experience</H3></IObs>
@@ -102,7 +102,7 @@
 		<TimelineElement
 			option="right"
 			title="Platform engineer"
-			description="BBD Software"
+			description="BBD Software and OM Bank"
 			dates="08/2023 - current"
 			location="Johannesburg, South Africa"
 		/>
@@ -139,14 +139,12 @@
 	<IObs once delay={200}><H3>Qualifications</H3></IObs>
 
 	<section class="max-w-xl mx-auto space-y-4 px-4">
-		Contact me to find out more!
-		<!-- <IObs once>
+		<IObs once>
 			<Qualification
 				icon={IconAWS}
 				alt="AWS"
 				title="Certified AWS Developer Associate"
 				subtext="October 2022"
-				href="/files/fsv-aws-dev-assoc.pdf"
 			/>
 		</IObs>
 
@@ -156,8 +154,7 @@
 				alt="AWS"
 				title="BSc. Applied Mathematics & Computer Science"
 				subtext="November 2021"
-				href="/files/fsv-unisa-certificate.pdf"
 			/>
-		</IObs> -->
+		</IObs>
 	</section>
 </PageLayout>

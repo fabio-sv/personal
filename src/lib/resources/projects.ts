@@ -310,5 +310,31 @@ export const projects: ProjectType[] = [
 				name: 'JavaScript'
 			},
 		]
+	},
+	{
+		urlName: 'flowt',
+		name: 'Flowt',
+		logo: {
+			src: '/logos/flowt.png',
+		},
+		description: [
+			'Gravity oooh'
+		],
+		url: 'https://fabiosv.itch.io/flowt',
+		repo: ["https://github.com/fabio-sv/Flowt"],
+		technologies: [
+			{
+				color: '#9333ea',
+				backgroundColor: 'rgb(147 51 234 / 0.2)',
+				icon: IconCSharp,
+				name: 'C#'
+			},
+			{
+				color: '#111827',
+				backgroundColor: 'rgb(17 24 39 / 0.2)',
+				icon: IconUnity,
+				name: 'Unity'
+			}
+		]
 	}
 ];

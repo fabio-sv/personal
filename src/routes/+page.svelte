@@ -11,6 +11,8 @@
 
 	let atBottom = false;
 
+	let age = new Date().getFullYear() - 2000;
+
 	onMount(() => {
 		const onscroll = () =>
 			(atBottom =
@@ -73,7 +75,7 @@
 
 	<IObs once>
 		<p class="text-xs sm:text-sm">
-			I am a 23 year old software engineer and problem solving
+			I am a {age} year old software engineer and problem solving
 			<a
 				class="relative underline italic"
 				href="https://en.wiktionary.org/wiki/fundi#:~:text=fundi%20(plural%20fundis),a%20particular%20skill%3B%20an%20expert."
@@ -83,7 +85,7 @@
 				fundi
 			</a>
 			from Johannesburg, South Africa. <br />
-			I'm really good at what I do.
+			<span class="italic">"Read the docs."</span> - Fabio
 		</p>
 	</IObs>
 
