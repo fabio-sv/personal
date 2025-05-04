@@ -59,7 +59,7 @@
 
 	<IObs once delay={5150}>
 		<div class="flex flex-col sm:flex-row-reverse sm:mt-12 gap-x-4">
-			<Button href="/cv">View my Track Record</Button>
+			<Button href="/cv">Track Record</Button>
 			<Button href="/projects">Side projects</Button>
 		</div>
 	</IObs>
