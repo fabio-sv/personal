@@ -10,7 +10,8 @@ export default {
 			},
 			fontFamily: {
 				open: ['Open Sans', 'sans-serif'],
-				agdasima: ['Agdasima', 'sans-serif']
+				agdasima: ['Agdasima', 'sans-serif'],
+				orbitron: ['Orbitron', 'sans-serif']
 			},
 			gridTemplateColumns: {
 				timeline: '1fr 2rem 1fr'

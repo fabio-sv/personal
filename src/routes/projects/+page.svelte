@@ -3,95 +3,9 @@
 	import IObs from '$lib/components/IObs.svelte';
 	import PageLayout from '$lib/components/PageLayout.svelte';
 	import Project from '$lib/components/Project.svelte';
+	import { projects } from '$lib/resources/projects';
 
 	let carousel: HTMLDivElement | undefined;
-	let distanceScrolled: number = 0;
-
-	type ProjectType = {
-		href: string;
-		image: string;
-		title: {
-			smaller?: boolean;
-			text: string;
-		};
-		color?: string;
-	};
-
-	const projects: ProjectType[] = [
-		{
-			href: '/projects/freshcup',
-			image: '/images/freshcup.PNG',
-			title: {
-				text: 'Freshcup'
-			}
-		},
-		{
-			href: '/projects/sandy',
-			image: '/images/sandy.png',
-			title: {
-				text: 'Sandy'
-			},
-			color: '#FAFAFA'
-		},
-		{
-			href: '/projects/socketing',
-			image: '/images/sockets.PNG',
-			title: {
-				text: 'Socketing'
-			}
-		},
-		{
-			href: '/projects/tetris',
-			image: '/images/tetris.PNG',
-			title: {
-				text: 'Tetris'
-			}
-		},
-		{
-			href: '/projects/glowb',
-			image: '/images/glowb.jpeg',
-			title: {
-				text: 'Glowb'
-			},
-			color: '#FAFAFA'
-		},
-		{
-			href: '/projects/micromania',
-			image: '/images/mono-micro.PNG',
-			title: {
-				text: 'Micro Mania'
-			}
-		},
-		{
-			href: '/projects/life',
-			image: '/images/life.PNG',
-			title: {
-				text: 'Life'
-			}
-		},
-		{
-			href: '/projects/cluedo',
-			image: '/images/cluedo.png',
-			title: {
-				text: 'Cluedo'
-			}
-		},
-		{
-			href: '/projects/terminal',
-			image: '/images/terminal.png',
-			title: {
-				text: 'Termiwebsite'
-			},
-			color: '#FAFAFA'
-		},
-		{
-			href: '/projects/flowt',
-			image: '/images/flowt.png',
-			title: {
-				text: 'Flowt'
-			}
-		}
-	];
 </script>
 
 <PageLayout class="px-0">
@@ -99,13 +13,12 @@
 
 	<div
 		bind:this={carousel}
-		on:scroll={() => (distanceScrolled = carousel?.scrollLeft || 0)}
 		class="flex overflow-x-auto w-full gap-x-2 mt-12 [&>:first-child]:ml-auto [&>:last-child]:mr-auto snap-x snap-mandatory px-2"
 	>
 		{#each projects as project, i (i)}
-			<Project href={project.href} image={project.image} color={project.color}>
-				<p class={project.title.smaller ? 'text-2xl' : 'text-3xl'} style="color: {project.color};">
-					{project.title.text}
+			<Project {project}>
+				<p class="text-3xl" style="color: {project.backgroundColor};">
+					{project.name}
 				</p>
 			</Project>
 		{/each}

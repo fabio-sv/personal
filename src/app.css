@@ -12,6 +12,11 @@
 	src: url('/fonts/opensans/OpenSans-VariableFont.ttf');
 }
 
+@font-face {
+	font-family: 'Orbitron';
+	src: url('/fonts/orbitron/Orbitron-VariableFont_wght.ttf');
+}
+
 * {
 	scrollbar-color: transparent transparent;
 	scrollbar-width: thin;

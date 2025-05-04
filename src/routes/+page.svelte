@@ -24,17 +24,19 @@
 </script>
 
 <PageLayout class="min-h-screen relative px-2">
-	<svg fill="#252525" class="h-12 sm:h-auto">
-		<text
-			x="50%"
-			y="50%"
-			dy=".35em"
-			text-anchor="middle"
-			class="text-6xl sm:text-9xl font-light sm:font-medium"
-		>
-			Fabio Sousa Vieira
-		</text>
-	</svg>
+	<IObs once delay={1}>
+		<svg fill="#252525" class="h-12 sm:h-auto">
+			<text
+				x="50%"
+				y="50%"
+				dy=".35em"
+				text-anchor="middle"
+				class="text-4xl md:text-8xl sm:font-medium font-orbitron"
+			>
+				Fabio Sousa Vieira
+			</text>
+		</svg>
+	</IObs>
 
 	<IObs once delay={5000}>
 		<Typewriter
@@ -46,9 +48,9 @@
 			--cursor-color="#252525"
 		>
 			<H2>Software engineer</H2>
+			<H2>Cloud engineer</H2>
 			<H2>Web developer</H2>
 			<H2>Full stack developer</H2>
-			<H2>Cloud engineer</H2>
 			<H2>Problem solver</H2>
 			<H2>Bug fixer</H2>
 			<H2>Tech enthusiast</H2>
@@ -58,7 +60,7 @@
 	<IObs once delay={5150}>
 		<div class="flex flex-col sm:flex-row-reverse sm:mt-12 gap-x-4">
 			<Button href="/cv">View my CV</Button>
-			<Button href="/projects" variant="secondary">Side projects</Button>
+			<Button href="/projects">Side projects</Button>
 		</div>
 	</IObs>
 
@@ -84,7 +86,8 @@
 				fundi
 			</a>
 			from Johannesburg, South Africa. <br />
-			<span class="italic">"Read the docs."</span> - Fabio
+			My passions are Cloud, Automation, User Experience and Efficiency. <br />
+			<span class="italic">"If it doesn't work, you missed something in the docs."</span> - Me
 		</p>
 	</IObs>
 

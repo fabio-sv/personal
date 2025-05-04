@@ -18,7 +18,7 @@
 	<a href="https://api.whatsapp.com/send?phone=27714558340" aria-label="Contact me on Whatsapp">
 		<Icon src={IconWhatsapp} size="1rem" className="drop-shadow" />
 	</a>
-	<a href="https://github.com/FabioSVBBD" aria-label="Look at my Github">
+	<a href="https://github.com/fabio-sv" aria-label="Look at my Github">
 		<Icon src={IconGithub} size="1rem" className="drop-shadow" />
 	</a>
 </footer>

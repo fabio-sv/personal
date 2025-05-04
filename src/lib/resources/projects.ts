@@ -14,9 +14,11 @@ import IconVue from 'svelte-icons-pack/si/SiVuedotjs';
 import IconWebpack from 'svelte-icons-pack/si/SiWebpack';
 import IconHtml from 'svelte-icons-pack/si/SiHtml5';
 
-type ProjectType = {
+export type ProjectType = {
 	urlName: string;
 	name: string;
+	image: string;
+	backgroundColor?: string;
 	logo: {
 		src: string;
 	};
@@ -36,6 +38,7 @@ export const projects: ProjectType[] = [
 	{
 		urlName: 'freshcup',
 		name: 'Freshcup',
+		image: '/images/freshcup.PNG',
 		logo: {
 			src: '/logos/freshcup.png'
 		},
@@ -61,8 +64,31 @@ export const projects: ProjectType[] = [
 		]
 	},
 	{
+		urlName: "sandy",
+		name: "Sandy",
+		image: '/images/sandy.png',
+		backgroundColor: '#FAFAFA',
+		logo: {
+			src: '/logos/sandy.png',
+		},
+		description: [
+			"Physics simulations go brr"
+		],
+		url: 'https://sand-three.vercel.app/',
+		repo: ["https://github.com/fabio-sv/sand"],
+		technologies: [
+			{
+				color: '#eab308',
+				backgroundColor: 'rgb(234 179 8 / 0.2)',
+				icon: IconJavaScript,
+				name: 'JavaScript'
+			},
+		]
+	},
+	{
 		urlName: 'socketing',
 		name: 'Socketing',
+		image: '/images/sockets.PNG',
 		logo: {
 			src: '/logos/socketing.svg'
 		},
@@ -70,7 +96,7 @@ export const projects: ProjectType[] = [
 			'Socketing is a serverless web sockets application, weird right?',
 			'built to show how a web sockets application which intuitively requires a server, can be serverless.'
 		],
-		repo: ['https://github.com/FabioSVBBD/sockets'],
+		repo: ['https://github.com/fabio-sv/sockets'],
 		technologies: [
 			{
 				color: '#a16207',
@@ -105,8 +131,36 @@ export const projects: ProjectType[] = [
 		]
 	},
 	{
+		urlName: 'flowt',
+		name: 'Flowt',
+		image: '/images/flowt.png',
+		logo: {
+			src: '/logos/flowt.png',
+		},
+		description: [
+			'Gravity oooh'
+		],
+		url: 'https://fabiosv.itch.io/flowt',
+		repo: ["https://github.com/fabio-sv/Flowt"],
+		technologies: [
+			{
+				color: '#9333ea',
+				backgroundColor: 'rgb(147 51 234 / 0.2)',
+				icon: IconCSharp,
+				name: 'C#'
+			},
+			{
+				color: '#111827',
+				backgroundColor: 'rgb(17 24 39 / 0.2)',
+				icon: IconUnity,
+				name: 'Unity'
+			}
+		]
+	},
+	{
 		urlName: 'tetris',
 		name: 'Tetris',
+		image: '/images/tetris.PNG',
 		logo: {
 			src: '/logos/tetris.PNG'
 		},
@@ -129,6 +183,8 @@ export const projects: ProjectType[] = [
 	{
 		urlName: 'glowb',
 		name: 'Glowb',
+		image: '/images/glowb.jpeg',
+		backgroundColor: '#FAFAFA',
 		logo: {
 			src: '/logos/glowb.PNG'
 		},
@@ -138,7 +194,7 @@ export const projects: ProjectType[] = [
 			"We didn't win. We came second."
 		],
 		url: 'https://fabiosv.itch.io/glowb',
-		repo: ['https://github.com/FabioSVBBD/LightBulb'],
+		repo: ['https://github.com/fabio-sv/LightBulb'],
 		technologies: [
 			{
 				color: '#9333ea',
@@ -157,6 +213,7 @@ export const projects: ProjectType[] = [
 	{
 		urlName: 'micromania',
 		name: 'Micro Mania',
+		image: '/images/mono-micro.PNG',
 		logo: {
 			src: '/logos/microfrontend.PNG'
 		},
@@ -166,7 +223,7 @@ export const projects: ProjectType[] = [
 			'The idea is that you create a host app, and consume client apps using module federation. How this works is you expose a function in your app via a url, for example http://localhost:8081/remoteEntry.js can be consumed by the host, because it exposes a function that takes in a DOM node and attaches the app to that node. So the host calls the function and passes a dom node by reference, and the client attaches itself to the node.',
 			"Ultimately, we did not go with this solution since there are all sorts of complexities involved - such as state sharing between the MFE's in this context can be quite challenging, type safety goes out the window, and consistent styling will almost always prove to be a headache."
 		],
-		repo: ['https://github.com/FabioSVBBD/mono-micro'],
+		repo: ['https://github.com/fabio-sv/mono-micro'],
 		technologies: [
 			{
 				color: '#dc2626',
@@ -213,8 +270,32 @@ export const projects: ProjectType[] = [
 		]
 	},
 	{
+		urlName: 'terminal',
+		name: 'Termiwebsite',
+		image: '/images/terminal.png',
+		backgroundColor: '#FAFAFA',
+		logo: {
+			src: '/logos/bash.png',
+		},
+		description: [
+			"Ever seen those cool websites people make that look like a shell?",
+			"Yea I wanted to make my own"
+		],
+		url: 'https://termiwebsite.vercel.app/',
+		repo: ['https://github.com/fabio-sv/termiwebsite'],
+		technologies: [
+			{
+				color: '#2563eb',
+				backgroundColor: 'rgb(37 99 235 / 0.2)',
+				icon: IconSolidJS,
+				name: 'Solid.js'
+			}
+		]
+	},
+	{
 		urlName: 'life',
 		name: 'Life',
+		image: '/images/life.PNG',
 		logo: {
 			src: '/logos/life.png'
 		},
@@ -224,7 +305,7 @@ export const projects: ProjectType[] = [
 			"What's interesting about Life is that it's Turing complete, meaning that if the game started with the correct initial conditions, the game would be able to compute and hence be able to do anything given an impractical amount of memory."
 		],
 		url: 'https://conways-game-of-life-cyan.vercel.app/',
-		repo: ['https://github.com/FabioSVBBD/conways-game-of-life'],
+		repo: ['https://github.com/fabio-sv/conways-game-of-life'],
 		wiki: 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life',
 		technologies: [
 			{
@@ -244,6 +325,7 @@ export const projects: ProjectType[] = [
 	{
 		urlName: 'cluedo',
 		name: 'Cluedo',
+		image: '/images/cluedo.png',
 		logo: {
 			src: '/logos/cluedo.png',
 		},
@@ -267,73 +349,6 @@ export const projects: ProjectType[] = [
 				backgroundColor: 'rgb(234 179 8 / 0.2)',
 				icon: IconJavaScript,
 				name: 'JavaScript'
-			}
-		]
-	},
-	{
-		urlName: 'terminal',
-		name: 'Termiwebsite',
-		logo: {
-			src: '/logos/bash.png',
-		},
-		description: [
-			"Ever seen those cool websites people make that look like a shell?",
-			"Yea I wanted to make my own"
-		],
-		url: 'https://termiwebsite.vercel.app/',
-		repo: ['https://github.com/fabio-sv/termiwebsite'],
-		technologies: [
-			{
-				color: '#2563eb',
-				backgroundColor: 'rgb(37 99 235 / 0.2)',
-				icon: IconSolidJS,
-				name: 'Solid.js'
-			}
-		]
-	},
-	{
-		urlName: "sandy",
-		name: "Sandy",
-		logo: {
-			src: '/logos/sandy.png',
-		},
-		description: [
-			"Physics simulations go brr"
-		],
-		url: 'https://sand-three.vercel.app/',
-		repo: ["https://github.com/fabio-sv/sand"],
-		technologies: [
-			{
-				color: '#eab308',
-				backgroundColor: 'rgb(234 179 8 / 0.2)',
-				icon: IconJavaScript,
-				name: 'JavaScript'
-			},
-		]
-	},
-	{
-		urlName: 'flowt',
-		name: 'Flowt',
-		logo: {
-			src: '/logos/flowt.png',
-		},
-		description: [
-			'Gravity oooh'
-		],
-		url: 'https://fabiosv.itch.io/flowt',
-		repo: ["https://github.com/fabio-sv/Flowt"],
-		technologies: [
-			{
-				color: '#9333ea',
-				backgroundColor: 'rgb(147 51 234 / 0.2)',
-				icon: IconCSharp,
-				name: 'C#'
-			},
-			{
-				color: '#111827',
-				backgroundColor: 'rgb(17 24 39 / 0.2)',
-				icon: IconUnity,
-				name: 'Unity'
 			}
 		]
 	}
