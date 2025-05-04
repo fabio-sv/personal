@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { getRandomRGBAHexColor } from '$lib/resources/utils';
+	import { getRandomNiceColor, getRandomRGBAHexColor } from '$lib/resources/utils';
 	import Particles from 'svelte-particles';
 	import type { ISourceOptions, Engine } from 'tsparticles-engine';
 	import { loadTrianglesPreset } from 'tsparticles-preset-triangles';
 
-	const randomColor = getRandomRGBAHexColor();
+	const randomColor = getRandomNiceColor();
 
 	const particleConfig: ISourceOptions = {
 		preset: 'triangles',
@@ -61,18 +61,17 @@
 					height: 1080
 				},
 				limit: 0,
-				value: 200
+				value: 400
 			},
 			opacity: {
 				value: 0.2
 			},
 			reduceDuplicates: false,
 			shape: {
-				type: 'circle'
+				type: ''
 			},
 			size: {
-				random: false,
-				value: 1.5
+				random: true
 			},
 			life: {
 				count: 0,
@@ -87,7 +86,7 @@
 			},
 			line_linked: {
 				enable: true,
-				distance: 110,
+				distance: 100,
 				color: randomColor,
 				opacity: 0.05,
 				frequency: 2,
@@ -101,17 +100,17 @@
 					},
 					rate: {
 						value: {
-							min: 4,
-							max: 9
+							min: 8,
+							max: 15
 						}
 					},
 					sizeOffset: true
 				}
 			}
 		},
-		pauseOnBlur: true,
-		pauseOnOutsideViewport: true,
-		smooth: false,
+		pauseOnBlur: false,
+		pauseOnOutsideViewport: false,
+		smooth: true,
 		zLayers: 1
 	};
 

@@ -6,6 +6,7 @@
 	import Qualification from '$lib/components/Qualification.svelte';
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import IconAWS from 'svelte-icons-pack/si/SiAmazonaws';
+	import IconKubernetes from 'svelte-icons-pack/si/SiKubernetes';
 	import IconBook from 'svelte-icons-pack/fi/FiBookOpen';
 	import IconReact from 'svelte-icons-pack/si/SiReact';
 	import IconNode from 'svelte-icons-pack/si/SiNodedotjs';
@@ -18,7 +19,7 @@
 </script>
 
 <PageLayout class="gap-y-0 my-8 px-2">
-	<IObs once><H1>My CV</H1></IObs>
+	<IObs once><H1>Track Record</H1></IObs>
 
 	<IObs once delay={200}><H3>Primary skill set</H3></IObs>
 
@@ -34,15 +35,6 @@
 
 		<IObs once class="!w-fit" delay={400}>
 			<div
-				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-red-600/20 text-red-600"
-			>
-				<Icon src={IconReact} title="React" color="#dc2626" />
-				React
-			</div>
-		</IObs>
-
-		<IObs once class="!w-fit" delay={500}>
-			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-pink-600/20 text-pink-600"
 			>
 				<Icon src={IconTerraform} title="Terraform" color="#db2777" />
@@ -50,7 +42,25 @@
 			</div>
 		</IObs>
 
+		<IObs once class="!w-fit" delay={500}>
+			<div
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
+			>
+				<Icon src={IconKubernetes} title="Kubernetes" color="#2563eb" />
+				Kubernetes
+			</div>
+		</IObs>
+
 		<IObs once class="!w-fit" delay={600}>
+			<div
+				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-red-600/20 text-red-600"
+			>
+				<Icon src={IconReact} title="React" color="#dc2626" />
+				React
+			</div>
+		</IObs>
+
+		<IObs once class="!w-fit" delay={700}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-gray-600/20 text-gray-600"
 			>
@@ -59,25 +69,16 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={700}>
+		<IObs once class="!w-fit" delay={900}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-green-600/20 text-green-600"
 			>
-				<Icon src={IconNode} title="Node.js" color="#16a34a" />
-				Node.js
-			</div>
-		</IObs>
-
-		<IObs once class="!w-fit" delay={800}>
-			<div
-				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-blue-600/20 text-blue-600"
-			>
-				<Icon src={IconTypescript} title="TypeScript" color="#2563eb" />
+				<Icon src={IconTypescript} title="TypeScript" color="#16a34a" />
 				TypeScript
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={900}>
+		<IObs once class="!w-fit" delay={1000}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-purple-600/20 text-purple-600"
 			>
@@ -86,7 +87,7 @@
 			</div>
 		</IObs>
 
-		<IObs once class="!w-fit" delay={1000}>
+		<IObs once class="!w-fit" delay={1100}>
 			<div
 				class="flex gap-x-2 justify-start items-center px-2 py-1 rounded-md bg-orange-600/20 text-orange-600"
 			>
@@ -105,7 +106,11 @@
 			description="BBD Software and OM Bank"
 			dates="08/2023 - current"
 			location="Johannesburg, South Africa"
-		/>
+		>
+			Built and maintained a production-grade AWS, Kubernetes and Serverless platform supporting
+			more than 200 developers, with a focus on high availability, optimized scaling and cost
+			efficiency, hardened security, and comprehensive observability.
+		</TimelineElement>
 
 		<TimelineElement
 			option="left"
@@ -113,7 +118,10 @@
 			description="BBD Software and Vodacom Financial Services"
 			dates="12/2021 - 07/2023"
 			location="Johannesburg, South Africa"
-		/>
+		>
+			Built and maintained the frontend and backend of a merchant portal for POS devices, enabling
+			seamless transaction management for millions of South Africans.
+		</TimelineElement>
 
 		<TimelineElement
 			option="right"
