@@ -64,7 +64,7 @@
 		</div>
 	</IObs>
 
-	<BouncingArrow {atBottom} />
+	<BouncingArrow {atBottom} delay="5000" />
 </PageLayout>
 
 <section

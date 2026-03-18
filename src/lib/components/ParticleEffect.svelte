@@ -4,6 +4,7 @@
 	import type { ISourceOptions, Engine } from 'tsparticles-engine';
 	import { loadTrianglesPreset } from 'tsparticles-preset-triangles';
 
+	// I like #8673EC
 	const randomColor = getRandomNiceColor();
 
 	const particleConfig: ISourceOptions = {

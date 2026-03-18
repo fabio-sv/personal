@@ -1,15 +1,24 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 
 	export let atBottom: boolean;
+	export let delay: number;
+	let delayOver = false;
 
 	const scrollDown = () => {
 		window.scroll({ top: window.innerHeight, behavior: 'smooth' });
 	};
+
+	onMount(() => {
+		setTimeout(() => {
+			delayOver = true;
+		}, delay);
+	});
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions a11y-no-static-element-interactions -->
-{#if !atBottom}
+{#if !atBottom && delayOver}
 	<svg
 		transition:fade={{ duration: 200 }}
 		on:click={scrollDown}

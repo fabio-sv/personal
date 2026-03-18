@@ -24,6 +24,17 @@
 	@apply transition-all;
 }
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
 .hide-animation {
 	opacity: 0;
 	filter: blur(2px);
@@ -38,6 +49,7 @@
 }
 
 @media (prefers-reduced-motion) {
+
 	.hide-animation,
 	.show-animation {
 		transition: none;
